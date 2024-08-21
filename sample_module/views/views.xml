@@ -51,6 +51,7 @@
         <field name="arch" type="xml">
             <field name="name" position="after">
                 <field name="spaceship_id"/>
-         </field>
+            </field>
+        </field>
     </record>
 </odoo>
