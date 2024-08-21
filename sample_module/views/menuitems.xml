@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.actions.act_window" 
+            id="action_space_app">
+        <field name="name">All Spaceships</field>
+        <field name="res_model">space.spaceship</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_space_app" name="Space" 
+            sequence="10"/>
+
+    <menuitem id="space_app_menu" name="Spaceships"
+            action="action_space_app"
+            parent="menu_space_app"/>
+</odoo>

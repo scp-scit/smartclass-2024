@@ -1,0 +1,18 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "dropdb",
+            "type": "shell",
+            "command": "if (psql -l | grep -q smartclass_empty); then dropdb smartclass_empty; fi"
+        },
+        {
+            "label": "odoo_empty",
+            "dependsOn": [
+                "dropdb"
+            ]
+        }
+    ]
+}

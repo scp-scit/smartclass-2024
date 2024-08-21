@@ -1,0 +1,72 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "smartclass",
+            "type": "python",
+            "request": "launch",
+            "cwd": "/home/adam/odoo/versions/17.0/odoo/",
+            "python": "/home/adam/odoo/versions/17.0/venv/bin/python",
+            "program": "./odoo-bin",
+            "args": [
+                "--addons-path=addons,../enterprise,../design-themes,/home/adam/odoo/dev/smartclass",
+                "--log-handler",
+                "odoo.addons.base.models.ir_attachment:WARNING",
+                //"-u",
+                //"models,views,security",
+                "-d",
+                "smartclass",
+                "--limit-time-real", "0",
+                "--limit-time-cpu", "0"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "smartclass shell",
+            "type": "python",
+            "request": "launch",
+            "cwd": "/home/adam/odoo/versions/17.0/odoo/",
+            "python": "/home/adam/odoo/versions/17.0/venv/bin/python",
+            "program": "./odoo-bin",
+            "args": [
+                "shell",
+                "--addons-path=addons,../enterprise,../design-themes,/home/adam/odoo/dev/smartclass/smart_module",
+                "--log-handler",
+                "odoo.addons.base.models.ir_attachment:WARNING",
+                //"-u",
+                //"models,views,security",
+                "-d",
+                "smartclass",
+                "--limit-time-real", "0",
+                "--limit-time-cpu", "0"
+            ],
+            "console": "externalTerminal"
+        },
+        {
+            "name": "smartclass_empty",
+            "type": "python",
+            "request": "launch",
+            "cwd": "/home/adam/odoo/versions/17.0/odoo/",
+            "python": "/home/adam/odoo/versions/17.0/venv/bin/python",
+            "preLaunchTask": "odoo_empty",
+            "program": "./odoo-bin",
+            "args": [
+                "--addons-path=addons,../enterprise,../design-themes,/home/adam/odoo/dev/smartclass/smart_module",
+                "--log-handler",
+                "odoo.addons.base.models.ir_attachment:WARNING",
+                "-i",
+                "models,views,security",
+                "-d",
+                "smartclass_empty",
+                "--test-enable",
+                //"--test-tags", ":TestClass.test_func,/test_module,external",
+                "--limit-time-real", "0",
+                "--limit-time-cpu", "0"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
