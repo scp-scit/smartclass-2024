@@ -16,3 +16,12 @@ class Spaceship(models.Model):
                         string='Device Type',)
     contact_id = fields.Many2one('res.partner',   
                 string='Contact', index=True)
+    cost_per_gallon = fields.float(string="Cost Per Gallon")
+    gallons_per_tank = fields.Integer(string="Gallons per tank")
+
+    cost_per_tank = fields.Float(string = "Cost to Fill Tank", compute="_compute_cost_per_tank")
+
+    @api.depends('cost_per_gallonm','gallongs_per_tank')
+    def _compute_cost_per_tank(self);
+            Spaceship.cost_per_tank = Spaceship.cost_per_gallon * Spaceship.gallons_per_tank
+            

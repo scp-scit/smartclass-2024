@@ -13,7 +13,11 @@
                             <field name="device_type"/>
                             <field name="contact_id"/>
                         </group>
-                    </group>
+                        <group>
+                        <field name="cost_per_gallon"/>
+                        <field name="gallons_per_tank"/>
+                        <field name="cost_per_tank"/>
+                        </group>
                 </sheet>
             </form>
         </field>
