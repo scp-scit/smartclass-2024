@@ -10,7 +10,7 @@
                         <group>
                             <field name="name"/>
                             <field name="number"/>
-                             <field name="device_type"/>
+                            <field name="device_type"/>
                         </group>
                     </group>
                 </sheet>
