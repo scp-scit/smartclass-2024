@@ -7,10 +7,10 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_space_app" name="Space" 
+    <menuitem id="menu_space_app" name="Ship Inventory"
             sequence="10"/>
 
-    <menuitem id="space_app_menu" name="Spaceships"
+    <menuitem id="space_app_menu" name="Ship Inventory"
             action="action_space_app"
             parent="menu_space_app"/>
 </odoo>
