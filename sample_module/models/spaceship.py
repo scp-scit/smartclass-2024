@@ -12,5 +12,5 @@ class Spaceship(models.Model):
     device_type = fields.Selection(selection=[('Bike', 'Bike'),
                                    ('Car', 'Car'),
                                    ('Train', 'Train'),
-                                   ('other', 'Other'),], 
+                                   ('other', 'Other')], 
                         string='Device Type',)
