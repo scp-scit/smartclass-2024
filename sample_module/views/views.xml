@@ -18,6 +18,7 @@
                         <field name="gallons_per_tank"/>
                         <field name="cost_per_tank"/>
                         </group>
+                    </group>
                 </sheet>
             </form>
         </field>
