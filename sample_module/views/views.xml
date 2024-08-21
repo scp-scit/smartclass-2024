@@ -49,16 +49,10 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <group>
-                            <field name="name" position="after">
-                            <field name="spaceship_id"/>
-                        </group>
-                    </group>
-                </sheet>
-            </form>
+            <group>
+                <field name="name" position="after">
+                <field name="spaceship_id"/>
+            </group>
         </field>
     </record>
 </odoo>
