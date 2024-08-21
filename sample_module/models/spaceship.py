@@ -11,4 +11,4 @@ class Spaceship(models.Model):
     number = fields.Integer(string="Number")
     device_type = fields.Char(string="Device Type",
                            help='This is a Char Field for device type - test',
-                           required=True,)
+                           required=False,)
