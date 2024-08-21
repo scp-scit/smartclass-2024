@@ -29,7 +29,7 @@ class Spaceship(models.Model):
     ship_volume = fields.Float(string = "Ship Volume", compute="_compute_ship_volume")   
 
 
-    @api.depends('cost_per_gallon','gallongs_per_tank')
+    @api.depends('cost_per_gallon','gallons_per_tank')
     def _compute_cost_per_tank(self):
         for spaceship in self: 
             spaceship.cost_per_tank = spaceship.cost_per_gallon * spaceship.gallons_per_tank
