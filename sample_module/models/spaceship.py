@@ -43,7 +43,3 @@ class Spaceship(models.Model):
 
     spaceships = fields.One2Many(comodel_name='res_partner',inverse_name='spaceship_id',string="spaceships")
 
-
-    
-
-
