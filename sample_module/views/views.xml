@@ -50,7 +50,7 @@
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view.partner_form"/>
         <field name="arch" type="xml">
-            <field name="partner_id" position="after">
+            <field name="name" position="after">
                 <field name="spaceship_id"/>
             </field>
         </field>
