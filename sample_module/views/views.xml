@@ -50,7 +50,7 @@
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
             <field name="name" position="after">
-            <field name="spaceship_id"/>
+                <field name="spaceship_id"/>
          </field>
     </record>
 </odoo>
