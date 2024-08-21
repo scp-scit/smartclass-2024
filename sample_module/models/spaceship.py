@@ -41,7 +41,7 @@ class Spaceship(models.Model):
         for spaceship in self: 
             spaceship.ship_volume = spaceship.ship_height * spaceship.ship_length * spaceship.ship_width
 
-    spaceships = fields.One2Many(comodel_name='sale.order',inverse_name='spaceship_id',string="spaceships"
+    spaceships = fields.One2Many(comodel_name='sale.order',inverse_name='spaceship_id',string="spaceships")
 
 
     
