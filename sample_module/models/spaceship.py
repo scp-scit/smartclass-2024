@@ -39,7 +39,7 @@ class Spaceship(models.Model):
     @api.depends('ship_height','ship_width','ship_length')
     def _compute_ship_volume(self):
         for spaceship in self: 
-            spaceship._compute_ship_volume = spaceship.ship_height * spaceship.ship_length * spaceship.ship_width
+            spaceship.ship_volume = spaceship.ship_height * spaceship.ship_length * spaceship.ship_width
 
 
 
