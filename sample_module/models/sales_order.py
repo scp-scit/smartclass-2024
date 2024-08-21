@@ -1,7 +1,7 @@
 from odoo import api, fields, models
 
-class SaleOrder(models.Model):
-    _inherit = 'sale.order'
+class ResPartner(models.Model):
+    _inherit = 'res.partner'
 
     spaceship_id = fields.Many2One(comodel_name='space.spaceship',string="Spaceship")
                                    
