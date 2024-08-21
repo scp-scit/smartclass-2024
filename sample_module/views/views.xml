@@ -17,6 +17,11 @@
                         <field name="cost_per_gallon"/>
                         <field name="gallons_per_tank"/>
                         <field name="cost_per_tank"/>
+                        </group>
+                        <group>
+                        <field name="ship_height"/>
+                        <field name="ship_length"/>
+                        <field name="ship_width"/>
                         <field name="ship_volume"/>
                         </group>
                     </group>
