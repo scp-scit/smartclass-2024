@@ -24,6 +24,7 @@
                             <field name="ship_width"/>
                             <field name="ship_volume"/>
                         </group>
+                    </group>
                 </sheet>
             </form>
         </field>
