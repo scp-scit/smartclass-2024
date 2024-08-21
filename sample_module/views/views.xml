@@ -17,6 +17,7 @@
                         <field name="cost_per_gallon"/>
                         <field name="gallons_per_tank"/>
                         <field name="cost_per_tank"/>
+                        <field name="ship_volume"/>
                         </group>
                     </group>
                 </sheet>
@@ -33,6 +34,7 @@
                 <field name="number" readonly="1"/>
                 <field name="device_type" readonly="1"/>
                 <field name="contact_id" readonly="1"/>
+                <field name="ship_volume" readonly="1"/>
             </tree>
         </field>
     </record>

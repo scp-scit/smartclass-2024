@@ -21,8 +21,23 @@ class Spaceship(models.Model):
 
     cost_per_tank = fields.Float(string = "Cost to Fill Tank", compute="_compute_cost_per_tank")
 
+
+    ship_length = fields.Integer(string="Ship Length")
+    ship_width = fields.Integer(string="Ship Width")
+    ship_height = fields.Integer(string="Ship Height")
+    
+    ship_volume = fields.Float(string = "Ship Volume", compute="_compute_ship_volume")   
+
+
     @api.depends('cost_per_gallonm','gallongs_per_tank')
     def _compute_cost_per_tank(self):
-            Spaceship.cost_per_tank = Spaceship.cost_per_gallon * Spaceship.gallons_per_tank;
+            Spaceship.cost_per_tank = Spaceship.cost_per_gallon * Spaceship.gallons_per_tank
+    
+    def _compute_ship_volume(self):
+            Spaceship._compute_ship_volume = Spaceship.ship_height * Spaceship.ship_length * Spaceship.ship_width
+
+            
+
+    
 
 
