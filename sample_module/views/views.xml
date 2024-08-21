@@ -43,9 +43,7 @@
             </tree>
         </field>
     </record>
-</odoo>
 
-<odoo>
     <record id="res_partner_form_view_inherit" model="ir.ui.view">
         <field name="name">spaceship.base.view_partner_form.view.inherit</field>
         <field name="model">res.partner</field>
