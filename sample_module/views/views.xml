@@ -11,6 +11,7 @@
                             <field name="name"/>
                             <field name="number"/>
                             <field name="device_type"/>
+                            <field name="contact_id"/>
                         </group>
                     </group>
                 </sheet>
@@ -26,6 +27,7 @@
                 <field name="name" readonly="1"/>
                 <field name="number" readonly="1"/>
                 <field name="device_type" readonly="1"/>
+                <field name="contact_id" readonly="1"/>
             </tree>
         </field>
     </record>

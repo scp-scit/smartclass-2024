@@ -14,3 +14,5 @@ class Spaceship(models.Model):
                                    ('Train', 'Train'),
                                    ('other', 'Other')], 
                         string='Device Type',)
+    contact_id = fields.Many2one('res.partner',   
+                string='Contact', index=True)
