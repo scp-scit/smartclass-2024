@@ -10,5 +10,5 @@ class Spaceship(models.Model):
     manufacture_date = fields.Date(string="Date")
     number = fields.Integer(string="Number")
     device_type = fields.Char(string='Device Type',
-                           help='This is a Char Field for device type',
+                           help='This is a Char Field for device type - test',
                            required=True,)
